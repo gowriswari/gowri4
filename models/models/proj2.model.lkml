@@ -2,6 +2,7 @@ connection: "gowri-bq-connect2"
 
 # include all the views
 include: "/views/**/*.view.lkml"
+include: "/Lookml_dashboard1.dashboard.lookml"
 
 datagroup: proj2_default_datagroup {
   # sql_trigger: SELECT MAX(id) FROM etl_log;;
@@ -11,4 +12,3 @@ datagroup: proj2_default_datagroup {
 persist_with: proj2_default_datagroup
 
 explore: covid19_open_data {}
-
